@@ -1,0 +1,28 @@
+
+public class variable{
+    int data = 50;
+    static int m = 40 ;;
+    
+    void method(){
+        int c = 10;
+        System.out.println(c);
+    }
+    public static void main(String[] args) {
+        variable v = new variable();
+       v.method();
+        System.out.println(v.data);
+        System.out.println(m);
+    }
+       
+
+}
+
+   // public static void main(String[] args) 
+//    {
+//    // A a = new A();
+//     //a.method();;
+ 
+//     System.out.println(m);
+//     }
+
+//}
