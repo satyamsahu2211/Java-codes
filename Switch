@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class code {
+    public static void main(String[] args) {
+        //int n = 2000;
+        // if(n%4 == 0){
+        //     if (n%100==0) {
+        //         if (n%400==0) {
+        //             System.out.println("leap year");
+        //         }else{
+        //             System.out.println("not leap year");
+        //         }
+        //     }else{
+        //         System.out.println("leap year");
+        //     }
+
+        // }else{
+        //     System.out.println("number is odd");
+        // }
+            Scanner b = new Scanner(System.in);
+            System.out.println("enter a :");
+            int n1 = b.nextInt();
+            System.out.println("enter  b:");
+            int n2 = b.nextInt();
+            String sym = b.next();
+            int res;
+            switch (sym) {
+                case "+": res = n1+ n2;
+                    System.out.println(res+"");
+                    break;
+                case "-" : res = n1 - n2;
+                System.out.println(res + "");
+                break;
+                case "/" : res = n1 / n2;
+                System.out.println(res +"");
+                break;
+                case "*" : res = n1 * n2;
+                System.out.println(res +"");
+                break;
+                       
+            
+                default:
+                System.out.println(" operation is invalid");
+                    break;
+            }
+            // b = 20;
+            // int t = a;
+            // a = b ;
+            // b = t ;
+            // a = a + b;
+            // b = a - b;
+            // a = a - b;
+            // System.out.println(a+"");
+            // System.out.println(b+"");
+    }
+}
