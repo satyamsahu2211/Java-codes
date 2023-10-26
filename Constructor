@@ -1,0 +1,57 @@
+
+// *********default constructor
+
+// public class constuctor {
+//     constuctor(){
+//         System.out.println("default constructor");
+//     }
+//     public static void main(String[] args) {
+//         constuctor c = new constuctor();
+
+//     }
+// }
+
+// *********parameterized constuctor
+
+// public class constuctor{
+//     int id;
+//     String name;
+//     constuctor(int i,String n){
+//         id = i; 
+//         name = n;
+//     }
+//     void display(){
+//         System.out.println(id+ " "+ name);
+//     }
+//     public static void main(String[] args) {
+//         constuctor c1 = new constuctor(111,"satyam");
+//         constuctor c2 = new constuctor(222,"skndnf");
+//         c1.display();
+//         c2.display();
+//     }
+// }
+
+// copy constructor
+public class constuctor{
+    int id;
+    String name;
+    int age;
+    constuctor(int i,String n){
+        id = i; 
+        name = n; 
+        
+    }constuctor(int i,String n,int a){
+        id = i; 
+        name = n; 
+         age = a;
+    }
+    void display(){
+        System.out.println(id+ " "+ name+" "+ age);
+    }
+    public static void main(String[] args) {
+        constuctor c1 = new constuctor(111,"satyam");
+        constuctor c2 = new constuctor(222,"skndnf",25);
+        c1.display();
+        c2.display();
+    }
+}
