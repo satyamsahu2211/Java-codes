@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+public class Practice {
+  public static void main(String[] args) {
+        int x ,y,z;
+        System.out.println("Enter ther integers");
+        Scanner sc = new Scanner(System.in);
+        x = sc.nextInt();
+        y = sc.nextInt();
+        z = sc.nextInt();
+        
+        if(x>y && x>z){
+            System.out.println("First number is Largest");
+        }
+        else if(y >x && y>z){
+            System.out.println("second number is largest");
+        }
+        else if(z>x && z >y){
+            System.out.println("third number is largest");
+        }
+        else{
+            System.out.println("no number is found");
+        }
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // int z = a + b;
+        // System.out.println("Sum of enterd integers "+z);
+    // int x;
+    // int y;
+    // Scanner in = new Scanner(System.in);
+    // System.out.println("Enter x and y");
+    // x = in.nextInt();
+    // y = in.nextInt();
+    // System.out.println("Before Swapping\nx = "+x+"  \ny= " +y);
+    
+    // x=x+y;
+    // y=x-y;
+    // x=x-y;
+    // System.out.println("after Swapping\nx = "+x+"  \ny= " +y);
+    // 
+    //     int x ,y , temp;
+    //     System.out.println("Enter x and y");
+    //     Scanner in = new Scanner(System.in);
+        
+    //     x = in.nextInt();
+    //     y = in.nextInt();
+    //     System.out.println("Before Swapping \nx = "+x+"\ny ="+y);
+    //     temp = x ;
+    //     x=y;
+    //     y=temp;
+    //     System.out.println("After swapping\nx = "+x+"\ny = "+y);
+        
+        // float temperature;
+        // Scanner in = new Scanner(System.in);
+        // System.out.println("Enter Tepreture in Fahrenhiert");
+        // temperature = in.nextInt();
+        // temperature = ((temperature-32)*5)/9;
+        // System.out.println("Tempreature in Celsisus = " + temperature);
+        // for(int i=0;i<=10;i++){
+        
+        // }
+        
+    }
+}
