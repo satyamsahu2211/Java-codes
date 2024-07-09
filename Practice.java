@@ -2,25 +2,33 @@ import java.util.Scanner;
 
 public class Practice {
   public static void main(String[] args) {
-        int x ,y,z;
-        System.out.println("Enter ther integers");
-        Scanner sc = new Scanner(System.in);
-        x = sc.nextInt();
-        y = sc.nextInt();
-        z = sc.nextInt();
+    class Adder{  
+        static int add(int a,int b){return a+b;}  
+        static int add(int a,int b,int c){return a+b+c;}  
+        }  
+       
+        System.out.println(Adder.add(11,11));  
+        System.out.println(Adder.add(11,11,11));  
+          
+        // int x ,y,z;
+        // System.out.println("Enter ther integers");
+        // Scanner sc = new Scanner(System.in);
+        // x = sc.nextInt();
+        // y = sc.nextInt();
+        // z = sc.nextInt();
         
-        if(x>y && x>z){
-            System.out.println("First number is Largest");
-        }
-        else if(y >x && y>z){
-            System.out.println("second number is largest");
-        }
-        else if(z>x && z >y){
-            System.out.println("third number is largest");
-        }
-        else{
-            System.out.println("no number is found");
-        }
+        // if(x>y && x>z){
+        //     System.out.println("First number is Largest");
+        // }
+        // else if(y >x && y>z){
+        //     System.out.println("second number is largest");
+        // }
+        // else if(z>x && z >y){
+        //     System.out.println("third number is largest");
+        // }
+        // else{
+        //     System.out.println("no number is found");
+        // }
         // Scanner sc = new Scanner(System.in);
         // int a = sc.nextInt();
         // int b = sc.nextInt();
