@@ -1,15 +1,32 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Practice {
   public static void main(String[] args) {
-    class Adder{  
-        static int add(int a,int b){return a+b;}  
-        static int add(int a,int b,int c){return a+b+c;}  
-        }  
+//   String name  = "satyam";
+//   int len = name.length();
+//   String rev = "";
+//   for (int i = len - 1; i >= 0; i--)
+// {
+//     rev = rev + name.charAt(i);
+   
+// }
+// System.out.println("Reverse of "+name+" is "+rev);
+
+
+
+
+
+
+
+
+    // class Adder{  
+    //     static int add(int a,int b){return a+b;}  
+    //     static int add(int a,int b,int c){return a+b+c;}  
+    //     }  
        
-        System.out.println(Adder.add(11,11));  
-        System.out.println(Adder.add(11,11,11));  
-          
+    //     System.out.println(Adder.add(11,11));  
+    //     System.out.println(Adder.add(11,11,11));  
+            
         // int x ,y,z;
         // System.out.println("Enter ther integers");
         // Scanner sc = new Scanner(System.in);
