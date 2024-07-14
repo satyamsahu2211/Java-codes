@@ -24,17 +24,29 @@ public class Practice {
       
     }  
     //main method  
-    public static void main(String args[]){  
-        try  
-        {  
-            method();  
-        }   
-        catch (FileNotFoundException e)   
-        {  
-            e.printStackTrace();  
-        }  
-        System.out.println("rest of the code...");   
-
+    // public static void main(String args[]){  
+    //     try  
+    //     {  
+    //         method();  
+    //     }   
+    //     catch (FileNotFoundException e)   
+    //     {  
+    //         e.printStackTrace();  
+    //     }  
+    //     System.out.println("rest of the code...");   
+    if(age<18) {  
+        //throw Arithmetic exception if not eligible to vote  
+        throw new ArithmeticException("Person is not eligible to vote");    
+    }  
+    else {  
+        System.out.println("Person is eligible to vote!!");  
+    }  
+}  
+//main method  
+public static void main(String args[]){  
+    //calling the function  
+    validate(13);  
+    System.out.println("rest of the code...");  
 
 
 
