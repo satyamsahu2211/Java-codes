@@ -120,46 +120,56 @@
 // }
 
 // hollow diamond pattern
-function hollowDiamond(n) {
-  // upper part
-  for (let i = 1; i <= n; i++) {
+// function hollowDiamond(n) {
+//   // upper part
+//   for (let i = 1; i <= n; i++) {
+//     let row = "";
+
+//     // spaces
+//     for (let j = 1; j <= n - i; j++) {
+//       row += " ";
+//     }
+
+//     // stars + inner spaces
+//     for (let j = 1; j <= 2 * i - 1; j++) {
+//       if (j === 1 || j === 2 * i - 1) {
+//         row += "*"; // border
+//       } else {
+//         row += " "; // hollow
+//       }
+//     }
+
+//     console.log(row);
+//   }
+
+//   // lower part
+//   for (let i = n - 1; i >= 1; i--) {
+//     let row = "";
+
+//     for (let j = 1; j <= n - i; j++) {
+//       row += " ";
+//     }
+
+//     for (let j = 1; j <= 2 * i - 1; j++) {
+//       if (j === 1 || j === 2 * i - 1) {
+//         row += "*";
+//       } else {
+//         row += " ";
+//       }
+//     }
+
+//     console.log(row);
+//   }
+// }
+
+// hollowDiamond(5);
+
+
+for(let i = 0; i<5 ; i++){
     let row = "";
-
-    // spaces
-    for (let j = 1; j <= n - i; j++) {
-      row += " ";
+    for(let j=0; j<n-1 ; j++){
+      row = row + ""
     }
-
-    // stars + inner spaces
-    for (let j = 1; j <= 2 * i - 1; j++) {
-      if (j === 1 || j === 2 * i - 1) {
-        row += "*"; // border
-      } else {
-        row += " "; // hollow
-      }
-    }
-
-    console.log(row);
-  }
-
-  // lower part
-  for (let i = n - 1; i >= 1; i--) {
-    let row = "";
-
-    for (let j = 1; j <= n - i; j++) {
-      row += " ";
-    }
-
-    for (let j = 1; j <= 2 * i - 1; j++) {
-      if (j === 1 || j === 2 * i - 1) {
-        row += "*";
-      } else {
-        row += " ";
-      }
-    }
-
-    console.log(row);
-  }
+    
+    console.log(row)
 }
-
-hollowDiamond(5);
