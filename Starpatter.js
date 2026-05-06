@@ -67,29 +67,29 @@
 
 
 // for diamond pattern
-// function diamond(n) {
-//   // upper part
-//   for (let i = 1; i <= n; i++) {
-//     let row = "";
+function diamond(n) {
+  // upper part
+  for (let i = 1; i <= n; i++) {
+    let row = "";
 
-//     for (let j = 1; j <= n - i; j++) row += " ";
-//     for (let j = 1; j <= 2 * i - 1; j++) row += "*";
+    for (let j = 1; j <= n - i; j++) row += " ";
+    for (let j = 1; j <= 2 * i - 1; j++) row += "*";
 
-//     console.log(row);
-//   }
+    console.log(row);
+  }
 
-//   // lower part
-//   for (let i = n - 1; i >= 1; i--) {
-//     let row = "";
+  // lower part
+  for (let i = n - 1; i >= 1; i--) {
+    let row = "";
 
-//     for (let j = 1; j <= n - i; j++) row += " ";
-//     for (let j = 1; j <= 2 * i - 1; j++) row += "*";
+    for (let j = 1; j <= n - i; j++) row += " ";
+    for (let j = 1; j <= 2 * i - 1; j++) row += "*";
 
-//     console.log(row);
-//   }
-// }
+    console.log(row);
+  }
+}
 
-// diamond(5);
+diamond(5);
 
 // hollow square pattern
 // for(let i = 0; i<5 ; i++){
@@ -165,11 +165,138 @@
 // hollowDiamond(5);
 
 
-for(let i = 0; i<5 ; i++){
-    let row = "";
-    for(let j=0; j<n-1 ; j++){
-      row = row + ""
-    }
-    
-    console.log(row)
-}
+// for(let i = 0; i<5 ; i++){
+//     let row = "";
+//     for(let j=0; j<n-1 ; j++){
+//       row = row + ""
+//     }
+
+//     console.log(row)
+// }
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+// class Main {
+//     public static void main(String[] args) {
+//         int n = 3;
+//         for(int i=0;i<=n;i++){
+//                 System.out.println("*");
+//             }
+//             for(int i=0;i<=n+1;i++){
+//                 System.out.print("*");
+//             }
+//         for(int i=0;i<=n;i++){
+//             for(int j=1;j<=n-i+2;j++){
+//                 System.out.print(" ");
+//             }
+//             for(int k=1;k<=i;k++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+
+//     }
+// }
+
+// *
+// *
+// *
+// *
+// *****     
+//     *
+//    **
+//   ***
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+// class Main {
+//     public static void main(String[] args) {
+//         int n = 9;
+//         for(int i=1;i<=n;i++){
+//             for(int j=1;j<=n-i;j++){
+//                 System.out.print(" ");
+//             }
+//             for(int k=1;k<=(2*i-n);k++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//         for(int i=0;i<n;i++){
+//                 for(int j =0; j<n/2;j++){
+//                    System.out.print(" ");
+//                 }
+//                     System.out.println("*");
+//             }
+//     }
+// }
+
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+//     *
+//     *
+//     *
+//     *
+//     *
+//     *
+//     *
+//     *
+//     *
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+// class Main {
+//   public static void main(String[] args) {
+//         int n = 7;
+//     for (int i = 1; i <= n; i++) {
+//       for (int j = 1; j <= n - i + (n / 2) + 1; j++) {
+//         System.out.print(" ");
+//       }
+//       for (int k = 1; k <= (2 * i - n); k++) {
+//         System.out.print("*");
+//       }
+//       System.out.println();
+//     }
+//     for (int i = 0; i < n; i++) {
+//       for (int j = 0; j < (n / 2) + 1; j++) {
+//         if (j >= n / 2 - i && j >= i - n / 2) {
+//           System.out.print("*");
+//         } else {
+//           System.out.print(" ");
+//         }
+//       }
+//       for (int k = 0; k < n; k++) {
+//         if (i == n / 2) {
+//           System.out.print("*");
+//         } else {
+//           System.out.print(" ");
+//         }
+//       }
+//       for (int j = 0; j < (n / 2) + 1; j++) {
+//         if (j >= n / 2 - i && j >= i - n / 2) {
+//           System.out.print("*");
+//         }
+//       }
+//       System.out.println();
+//     }
+//   }
+// }
+
+//        *
+//       ***
+//      *****
+//     *******
+//    *       *
+//   **       **
+//  ***       ***
+// ***************
+//  ***       ***
+//   **       **
+//    *       *
